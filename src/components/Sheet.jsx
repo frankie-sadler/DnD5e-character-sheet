@@ -1,6 +1,6 @@
 import Header from "./Header";
 import Attributes from "./attributes/Attributes";
-import Combat from "./Combat";
+import Combat from "./combat/Combat";
 import Flavour from "./Flavour";
 
 // import "../styles / sheet.sass";
