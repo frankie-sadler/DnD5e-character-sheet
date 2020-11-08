@@ -1,4 +1,4 @@
-import Attack from "./Attack";
+import Attacks from "./attacks/Attacks";
 import AdditionalStats from "./hitpoints/AdditionalStats";
 import Equipment from "./equipment/Equipment";
 
@@ -6,7 +6,7 @@ const Combat = (props) => {
   return (
     <section>
       <AdditionalStats />
-      <Attack />
+      <Attacks />
       <Equipment />
     </section>
   );
