@@ -1,5 +1,5 @@
 import Attack from "./Attack";
-import HitPoints from "./HitPoint";
+import HitPoints from "./hitpoints/HitPoint";
 import Equipment from "./Equipment";
 
 const Combat = (props) => {
