@@ -1,65 +1,10 @@
+import AttributeScores from "./AttributeScores";
+
 const Attributes = (props) => {
   return (
     <section>
       <section className="attributes">
-        <div className="scores">
-          <ul>
-            <li>
-              <div className="score">
-                <label htmlFor="Strengthscore">Strength</label>
-                <input name="Strengthscore" placeholder="10" />
-              </div>
-              <div className="modifier">
-                <input name="Strengthmod" placeholder="+0" />
-              </div>
-            </li>
-            <li>
-              <div className="score">
-                <label htmlFor="Dexterityscore">Dexterity</label>
-                <input name="Dexterityscore" placeholder="10" />
-              </div>
-              <div className="modifier">
-                <input name="Dexteritymod" placeholder="+0" />
-              </div>
-            </li>
-            <li>
-              <div className="score">
-                <label htmlFor="Constitutionscore">Constitution</label>
-                <input name="Constitutionscore" placeholder="10" />
-              </div>
-              <div className="modifier">
-                <input name="Constitutionmod" placeholder="+0" />
-              </div>
-            </li>
-            <li>
-              <div className="score">
-                <label htmlFor="Wisdomscore">Wisdom</label>
-                <input name="Wisdomscore" placeholder="10" />
-              </div>
-              <div className="modifier">
-                <input name="Wisdommod" placeholder="+0" />
-              </div>
-            </li>
-            <li>
-              <div className="score">
-                <label htmlFor="Intelligencescore">Intelligence</label>
-                <input name="Intelligencescore" placeholder="10" />
-              </div>
-              <div className="modifier">
-                <input name="Intelligencemod" placeholder="+0" />
-              </div>
-            </li>
-            <li>
-              <div className="score">
-                <label htmlFor="Charismascore">Charisma</label>
-                <input name="Charismascore" placeholder="10" />
-              </div>
-              <div className="modifier">
-                <input name="Charismamod" placeholder="+0" />
-              </div>
-            </li>
-          </ul>
-        </div>
+        <AttributeScores />
         <div className="attr-applications">
           <div className="inspiration box">
             <div className="label-container">
