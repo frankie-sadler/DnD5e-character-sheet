@@ -1,4 +1,4 @@
-const SavingThrows = (props) => {
+const DeathThrows = (props) => {
   return (
     <div className="deathsaves">
       <div>
@@ -28,4 +28,4 @@ const SavingThrows = (props) => {
   );
 };
 
-export default SavingThrows;
+export default DeathThrows;

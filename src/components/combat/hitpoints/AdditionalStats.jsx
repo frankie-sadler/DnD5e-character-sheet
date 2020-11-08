@@ -1,7 +1,7 @@
 import InfoBox from "./InfoBox";
 import HitPoints from "./HitPoints";
 import HitDice from "./HitDice";
-import SavingThrows from "./SavingThrows";
+import DeathThrows from "./DeathThrows";
 
 const AdditionalStats = (props) => {
   return (
@@ -15,7 +15,7 @@ const AdditionalStats = (props) => {
       <InfoBox className="speed" lableName="Speed" placeholder="30" />
       <HitPoints />
       <HitDice />
-      <SavingThrows />
+      <DeathThrows />
     </section>
   );
 };
