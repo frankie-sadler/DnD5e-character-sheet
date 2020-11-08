@@ -1,5 +1,3 @@
-import "../styles/sheet.css";
-
 const Header = (props) => {
   return (
     <header>
