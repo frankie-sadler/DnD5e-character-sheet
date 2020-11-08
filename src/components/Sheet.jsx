@@ -9,33 +9,33 @@ const Sheet = (props) => {
     <form className="charsheet">
       <header>
         <section className="charname">
-          <label for="charname">Character Name</label>
+          <label htmlFor="charname">Character Name</label>
           <input name="charname" placeholder="Thoradin Fireforge" />
         </section>
         <section className="misc">
           <ul>
             <li>
-              <label for="classlevel">Class & Level</label>
+              <label htmlFor="classlevel">Class & Level</label>
               <input name="classlevel" placeholder="Paladin 2" />
             </li>
             <li>
-              <label for="background">Background</label>
+              <label htmlFor="background">Background</label>
               <input name="background" placeholder="Acolyte" />
             </li>
             <li>
-              <label for="playername">Player Name</label>
+              <label htmlFor="playername">Player Name</label>
               <input name="playername" placeholder="Player McPlayerface" />
             </li>
             <li>
-              <label for="race">Race</label>
+              <label htmlFor="race">Race</label>
               <input name="race" placeholder="Half-elf" />
             </li>
             <li>
-              <label for="alignment">Alignment</label>
+              <label htmlFor="alignment">Alignment</label>
               <input name="alignment" placeholder="Lawful Good" />
             </li>
             <li>
-              <label for="experiencepoints">Experience Points</label>
+              <label htmlFor="experiencepoints">Experience Points</label>
               <input name="experiencepoints" placeholder="3240" />
             </li>
           </ul>
@@ -48,7 +48,7 @@ const Sheet = (props) => {
               <ul>
                 <li>
                   <div className="score">
-                    <label for="Strengthscore">Strength</label>
+                    <label htmlFor="Strengthscore">Strength</label>
                     <input name="Strengthscore" placeholder="10" />
                   </div>
                   <div className="modifier">
@@ -57,7 +57,7 @@ const Sheet = (props) => {
                 </li>
                 <li>
                   <div className="score">
-                    <label for="Dexterityscore">Dexterity</label>
+                    <label htmlFor="Dexterityscore">Dexterity</label>
                     <input name="Dexterityscore" placeholder="10" />
                   </div>
                   <div className="modifier">
@@ -66,7 +66,7 @@ const Sheet = (props) => {
                 </li>
                 <li>
                   <div className="score">
-                    <label for="Constitutionscore">Constitution</label>
+                    <label htmlFor="Constitutionscore">Constitution</label>
                     <input name="Constitutionscore" placeholder="10" />
                   </div>
                   <div className="modifier">
@@ -75,7 +75,7 @@ const Sheet = (props) => {
                 </li>
                 <li>
                   <div className="score">
-                    <label for="Wisdomscore">Wisdom</label>
+                    <label htmlFor="Wisdomscore">Wisdom</label>
                     <input name="Wisdomscore" placeholder="10" />
                   </div>
                   <div className="modifier">
@@ -84,7 +84,7 @@ const Sheet = (props) => {
                 </li>
                 <li>
                   <div className="score">
-                    <label for="Intelligencescore">Intelligence</label>
+                    <label htmlFor="Intelligencescore">Intelligence</label>
                     <input name="Intelligencescore" placeholder="10" />
                   </div>
                   <div className="modifier">
@@ -93,7 +93,7 @@ const Sheet = (props) => {
                 </li>
                 <li>
                   <div className="score">
-                    <label for="Charismascore">Charisma</label>
+                    <label htmlFor="Charismascore">Charisma</label>
                     <input name="Charismascore" placeholder="10" />
                   </div>
                   <div className="modifier">
@@ -105,30 +105,30 @@ const Sheet = (props) => {
             <div className="attr-applications">
               <div className="inspiration box">
                 <div className="label-container">
-                  <label for="inspiration">Inspiration</label>
+                  <label htmlFor="inspiration">Inspiration</label>
                 </div>
                 <input name="inspiration" type="checkbox" />
               </div>
               <div className="proficiencybonus box">
                 <div className="label-container">
-                  <label for="proficiencybonus">Proficiency Bonus</label>
+                  <label htmlFor="proficiencybonus">Proficiency Bonus</label>
                 </div>
                 <input name="proficiencybonus" placeholder="+2" />
               </div>
               <div className="saves list-section box">
                 <ul>
                   <li>
-                    <label for="Strength-save">Strength</label>
+                    <label htmlFor="Strength-save">Strength</label>
                     <input name="Strength-save" placeholder="+0" type="text" />
                     <input name="Strength-save-prof" type="checkbox" />
                   </li>
                   <li>
-                    <label for="Dexterity-save">Dexterity</label>
+                    <label htmlFor="Dexterity-save">Dexterity</label>
                     <input name="Dexterity-save" placeholder="+0" type="text" />
                     <input name="Dexterity-save-prof" type="checkbox" />
                   </li>
                   <li>
-                    <label for="Constitution-save">Constitution</label>
+                    <label htmlFor="Constitution-save">Constitution</label>
                     <input
                       name="Constitution-save"
                       placeholder="+0"
@@ -137,12 +137,12 @@ const Sheet = (props) => {
                     <input name="Constitution-save-prof" type="checkbox" />
                   </li>
                   <li>
-                    <label for="Wisdom-save">Wisdom</label>
+                    <label htmlFor="Wisdom-save">Wisdom</label>
                     <input name="Wisdom-save" placeholder="+0" type="text" />
                     <input name="Wisdom-save-prof" type="checkbox" />
                   </li>
                   <li>
-                    <label for="Intelligence-save">Intelligence</label>
+                    <label htmlFor="Intelligence-save">Intelligence</label>
                     <input
                       name="Intelligence-save"
                       placeholder="+0"
@@ -151,7 +151,7 @@ const Sheet = (props) => {
                     <input name="Intelligence-save-prof" type="checkbox" />
                   </li>
                   <li>
-                    <label for="Charisma-save">Charisma</label>
+                    <label htmlFor="Charisma-save">Charisma</label>
                     <input name="Charisma-save" placeholder="+0" type="text" />
                     <input name="Charisma-save-prof" type="checkbox" />
                   </li>
@@ -161,14 +161,14 @@ const Sheet = (props) => {
               <div className="skills list-section box">
                 <ul>
                   <li>
-                    <label for="Acrobatics">
+                    <label htmlFor="Acrobatics">
                       Acrobatics <span className="skill">(Dex)</span>
                     </label>
                     <input name="Acrobatics" placeholder="+0" type="text" />
                     <input name="Acrobatics-prof" type="checkbox" />
                   </li>
                   <li>
-                    <label for="Animal Handling">
+                    <label htmlFor="Animal Handling">
                       Animal Handling <span className="skill">(Wis)</span>
                     </label>
                     <input
@@ -179,98 +179,98 @@ const Sheet = (props) => {
                     <input name="Animal Handling-prof" type="checkbox" />
                   </li>
                   <li>
-                    <label for="Arcana">
+                    <label htmlFor="Arcana">
                       Arcana <span className="skill">(Int)</span>
                     </label>
                     <input name="Arcana" placeholder="+0" type="text" />
                     <input name="Arcana-prof" type="checkbox" />
                   </li>
                   <li>
-                    <label for="Athletics">
+                    <label htmlFor="Athletics">
                       Athletics <span className="skill">(Str)</span>
                     </label>
                     <input name="Athletics" placeholder="+0" type="text" />
                     <input name="Athletics-prof" type="checkbox" />
                   </li>
                   <li>
-                    <label for="Deception">
+                    <label htmlFor="Deception">
                       Deception <span className="skill">(Cha)</span>
                     </label>
                     <input name="Deception" placeholder="+0" type="text" />
                     <input name="Deception-prof" type="checkbox" />
                   </li>
                   <li>
-                    <label for="History">
+                    <label htmlFor="History">
                       History <span className="skill">(Int)</span>
                     </label>
                     <input name="History" placeholder="+0" type="text" />
                     <input name="History-prof" type="checkbox" />
                   </li>
                   <li>
-                    <label for="Insight">
+                    <label htmlFor="Insight">
                       Insight <span className="skill">(Wis)</span>
                     </label>
                     <input name="Insight" placeholder="+0" type="text" />
                     <input name="Insight-prof" type="checkbox" />
                   </li>
                   <li>
-                    <label for="Intimidation">
+                    <label htmlFor="Intimidation">
                       Intimidation <span className="skill">(Cha)</span>
                     </label>
                     <input name="Intimidation" placeholder="+0" type="text" />
                     <input name="Intimidation-prof" type="checkbox" />
                   </li>
                   <li>
-                    <label for="Investigation">
+                    <label htmlFor="Investigation">
                       Investigation <span className="skill">(Int)</span>
                     </label>
                     <input name="Investigation" placeholder="+0" type="text" />
                     <input name="Investigation-prof" type="checkbox" />
                   </li>
                   <li>
-                    <label for="Medicine">
+                    <label htmlFor="Medicine">
                       Medicine <span className="skill">(Wis)</span>
                     </label>
                     <input name="Medicine" placeholder="+0" type="text" />
                     <input name="Medicine-prof" type="checkbox" />
                   </li>
                   <li>
-                    <label for="Nature">
+                    <label htmlFor="Nature">
                       Nature <span className="skill">(Int)</span>
                     </label>
                     <input name="Nature" placeholder="+0" type="text" />
                     <input name="Nature-prof" type="checkbox" />
                   </li>
                   <li>
-                    <label for="Perception">
+                    <label htmlFor="Perception">
                       Perception <span className="skill">(Wis)</span>
                     </label>
                     <input name="Perception" placeholder="+0" type="text" />
                     <input name="Perception-prof" type="checkbox" />
                   </li>
                   <li>
-                    <label for="Performance">
+                    <label htmlFor="Performance">
                       Performance <span className="skill">(Cha)</span>
                     </label>
                     <input name="Performance" placeholder="+0" type="text" />
                     <input name="Performance-prof" type="checkbox" />
                   </li>
                   <li>
-                    <label for="Persuasion">
+                    <label htmlFor="Persuasion">
                       Persuasion <span className="skill">(Cha)</span>
                     </label>
                     <input name="Persuasion" placeholder="+0" type="text" />
                     <input name="Persuasion-prof" type="checkbox" />
                   </li>
                   <li>
-                    <label for="Religion">
+                    <label htmlFor="Religion">
                       Religion <span className="skill">(Int)</span>
                     </label>
                     <input name="Religion" placeholder="+0" type="text" />
                     <input name="Religion-prof" type="checkbox" />
                   </li>
                   <li>
-                    <label for="Sleight of Hand">
+                    <label htmlFor="Sleight of Hand">
                       Sleight of Hand <span className="skill">(Dex)</span>
                     </label>
                     <input
@@ -281,14 +281,14 @@ const Sheet = (props) => {
                     <input name="Sleight of Hand-prof" type="checkbox" />
                   </li>
                   <li>
-                    <label for="Stealth">
+                    <label htmlFor="Stealth">
                       Stealth <span className="skill">(Dex)</span>
                     </label>
                     <input name="Stealth" placeholder="+0" type="text" />
                     <input name="Stealth-prof" type="checkbox" />
                   </li>
                   <li>
-                    <label for="Survival">
+                    <label htmlFor="Survival">
                       Survival <span className="skill">(Wis)</span>
                     </label>
                     <input name="Survival" placeholder="+0" type="text" />
@@ -301,12 +301,16 @@ const Sheet = (props) => {
           </section>
           <div className="passive-perception box">
             <div className="label-container">
-              <label for="passiveperception">Passive Wisdom (Perception)</label>
+              <label htmlFor="passiveperception">
+                Passive Wisdom (Perception)
+              </label>
             </div>
             <input name="passiveperception" placeholder="10" />
           </div>
           <div className="otherprofs box textblock">
-            <label for="otherprofs">Other Proficiencies and Languages</label>
+            <label htmlFor="otherprofs">
+              Other Proficiencies and Languages
+            </label>
             <textarea name="otherprofs"></textarea>
           </div>
         </section>
@@ -314,46 +318,46 @@ const Sheet = (props) => {
           <section className="combat">
             <div className="armorclass">
               <div>
-                <label for="ac">Armor Class</label>
+                <label htmlFor="ac">Armor Class</label>
                 <input name="ac" placeholder="10" type="text" />
               </div>
             </div>
             <div className="initiative">
               <div>
-                <label for="initiative">Initiative</label>
+                <label htmlFor="initiative">Initiative</label>
                 <input name="initiative" placeholder="+0" type="text" />
               </div>
             </div>
             <div className="speed">
               <div>
-                <label for="speed">Speed</label>
+                <label htmlFor="speed">Speed</label>
                 <input name="speed" placeholder="30" type="text" />
               </div>
             </div>
             <div className="hp">
               <div className="regular">
                 <div className="max">
-                  <label for="maxhp">Hit Point Maximum</label>
+                  <label htmlFor="maxhp">Hit Point Maximum</label>
                   <input name="maxhp" placeholder="10" type="text" />
                 </div>
                 <div className="current">
-                  <label for="currenthp">Current Hit Points</label>
+                  <label htmlFor="currenthp">Current Hit Points</label>
                   <input name="currenthp" type="text" />
                 </div>
               </div>
               <div className="temporary">
-                <label for="temphp">Temporary Hit Points</label>
+                <label htmlFor="temphp">Temporary Hit Points</label>
                 <input name="temphp" type="text" />
               </div>
             </div>
             <div className="hitdice">
               <div>
                 <div className="total">
-                  <label for="totalhd">Total</label>
+                  <label htmlFor="totalhd">Total</label>
                   <input name="totalhd" placeholder="2d10" type="text" />
                 </div>
                 <div className="remaining">
-                  <label for="remaininghd">Hit Dice</label>
+                  <label htmlFor="remaininghd">Hit Dice</label>
                   <input name="remaininghd" type="text" />
                 </div>
               </div>
@@ -440,23 +444,23 @@ const Sheet = (props) => {
               <div className="money">
                 <ul>
                   <li>
-                    <label for="cp">cp</label>
+                    <label htmlFor="cp">cp</label>
                     <input name="cp" />
                   </li>
                   <li>
-                    <label for="sp">sp</label>
+                    <label htmlFor="sp">sp</label>
                     <input name="sp" />
                   </li>
                   <li>
-                    <label for="ep">ep</label>
+                    <label htmlFor="ep">ep</label>
                     <input name="ep" />
                   </li>
                   <li>
-                    <label for="gp">gp</label>
+                    <label htmlFor="gp">gp</label>
                     <input name="gp" />
                   </li>
                   <li>
-                    <label for="pp">pp</label>
+                    <label htmlFor="pp">pp</label>
                     <input name="pp" />
                   </li>
                 </ul>
@@ -468,25 +472,25 @@ const Sheet = (props) => {
         <section>
           <section className="flavor">
             <div className="personality">
-              <label for="personality">Personality</label>
+              <label htmlFor="personality">Personality</label>
               <textarea name="personality"></textarea>
             </div>
             <div className="ideals">
-              <label for="ideals">Ideals</label>
+              <label htmlFor="ideals">Ideals</label>
               <textarea name="ideals"></textarea>
             </div>
             <div className="bonds">
-              <label for="bonds">Bonds</label>
+              <label htmlFor="bonds">Bonds</label>
               <textarea name="bonds"></textarea>
             </div>
             <div className="flaws">
-              <label for="flaws">Flaws</label>
+              <label htmlFor="flaws">Flaws</label>
               <textarea name="flaws"></textarea>
             </div>
           </section>
           <section className="features">
             <div>
-              <label for="features">Features & Traits</label>
+              <label htmlFor="features">Features & Traits</label>
               <textarea name="features"></textarea>
             </div>
           </section>
