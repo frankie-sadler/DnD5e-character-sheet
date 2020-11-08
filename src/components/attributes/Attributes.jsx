@@ -1,9 +1,9 @@
 import AttributeScores from "./AttributeScores";
-import SavingThrows from "./SavingThrows";
-import SkillScores from "./SkillScores";
-import OtherProficiencies from "./OtherProficiencies";
-import PassivePerception from "./PassivePerception";
-import Inspiration from "./Inspiration";
+import SavingThrows from "./attributeUses/SavingThrows";
+import SkillScores from "./attributeUses/SkillScores";
+import OtherProficiencies from "./attributeUses/OtherProficiencies";
+import PassivePerception from "./attributeUses/PassivePerception";
+import Inspiration from "./attributeUses/Inspiration";
 
 const Attributes = (props) => {
   return (
