@@ -1,3 +1,5 @@
+import AttackRow from "./AttackRow";
+
 const Attack = (props) => {
   return (
     <section className="attacksandspellcasting">
@@ -12,39 +14,9 @@ const Attack = (props) => {
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>
-                <input name="atkname1" type="text" />
-              </td>
-              <td>
-                <input name="atkbonus1" type="text" />
-              </td>
-              <td>
-                <input name="atkdamage1" type="text" />
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <input name="atkname2" type="text" />
-              </td>
-              <td>
-                <input name="atkbonus2" type="text" />
-              </td>
-              <td>
-                <input name="atkdamage2" type="text" />
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <input name="atkname3" type="text" />
-              </td>
-              <td>
-                <input name="atkbonus3" type="text" />
-              </td>
-              <td>
-                <input name="atkdamage3" type="text" />
-              </td>
-            </tr>
+            <AttackRow />
+            <AttackRow />
+            <AttackRow />
           </tbody>
         </table>
         <textarea></textarea>
