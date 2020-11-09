@@ -1,3 +1,4 @@
+import Features from "./Features";
 import FlavourBox from "./FlavourBox";
 
 const Flavour = (props) => {
@@ -9,12 +10,7 @@ const Flavour = (props) => {
         <FlavourBox flavourName="bonds" />
         <FlavourBox flavourName="flaws" />
       </section>
-      <section className="features">
-        <div>
-          <label htmlFor="features">Features & Traits</label>
-          <textarea name="features"></textarea>
-        </div>
-      </section>
+      <Features />
     </section>
   );
 };
