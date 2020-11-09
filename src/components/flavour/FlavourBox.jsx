@@ -1,4 +1,4 @@
-const DescriptionBox = (props) => {
+const FlavourBox = (props) => {
   return (
     <div className={props.flavourName}>
       <label htmlFor={props.flavourName}>{props.flavourName}</label>
@@ -7,4 +7,4 @@ const DescriptionBox = (props) => {
   );
 };
 
-export default DescriptionBox;
+export default FlavourBox;
