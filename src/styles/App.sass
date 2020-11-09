@@ -1,0 +1,35 @@
+$sheet-width: 800px
+$bg: white
+$faded: #ddd
+$faded-light: #eee
+$faded-dark: #bbb
+$radius: 10px
+$gutter: 10px
+$bubble-size: 10px
+$small-box-width: 30px
+$large-box-width: 70px
+
+.red
+  background: red
+
+.blue
+  background: blue
+
+.hide
+  display: none !important
+
+textarea
+  font-size: 12px
+  text-align: left
+  width: calc(100% - #{$radius*2} - 2px)
+  border-radius: $radius
+  padding: $radius
+  resize: none
+  overflow: hidden
+  height: 15em
+
+input[type="checkbox"]
+  cursor: pointer
+
+div.box
+  margin-top: $gutter
