@@ -1,5 +1,3 @@
-// props = { className, lableName, placeholder}
-
 const InfoBox = (props) => {
   return (
     <div className={props.className}>

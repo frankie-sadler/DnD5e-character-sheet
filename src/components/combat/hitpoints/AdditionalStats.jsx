@@ -1,4 +1,4 @@
-import InfoBox from "./InfoBox";
+import InfoBox from "./Infobox";
 import HitPoints from "./HitPoints";
 import HitDice from "./HitDice";
 import DeathThrows from "./DeathThrows";
