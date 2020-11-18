@@ -1,0 +1,98 @@
+$sheet-width: 800px;
+$bg: white;
+$faded: #ddd;
+$faded-light: #eee;
+$faded-dark: #bbb;
+$radius: 10px;
+$gutter: 10px;
+$bubble-size: 10px;
+$small-box-width: 30px;
+$large-box-width: 70px;
+
+form.charsheet {
+  width: $sheet-width;
+  right: 0;
+  left: 0;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 10px;
+
+  main {
+    > section {
+      width: 32%;
+      display: flex;
+      flex-direction: column;
+
+      section.attributes {
+        $attr-width: 70px;
+        $attr-height: 80px;
+        $attr-gutter: 31px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        // Attribute Scores
+        div.scores {
+          width: $attr-width + $attr-gutter;
+          background-color: $faded-dark;
+          border-radius: $radius;
+          padding-bottom: $gutter / 2;
+
+          label {
+            font-size: 8px;
+            font-weight: bold;
+          }
+
+          ul {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            height: 100%;
+
+            li {
+              height: $attr-height;
+              width: $attr-width;
+              background-color: $bg;
+              border: 1px solid black;
+              text-align: center;
+              display: flex;
+              flex-direction: column;
+              border-radius: $radius;
+
+              input {
+                width: 100%;
+                padding: 0;
+                border: 0;
+              }
+
+              div.score {
+                input {
+                  text-align: center;
+                  font-size: 40px;
+                  padding: 2px 0px 0px 0px;
+                  background: $bg;
+                }
+              }
+
+              div.modifier {
+                margin-top: 3px;
+
+                input {
+                  background: $bg;
+                  width: $radius * 3;
+                  height: $radius * 2;
+                  border: 1px inset black;
+                  border-radius: $radius * 2;
+                  margin: -1px;
+                  text-align: center;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

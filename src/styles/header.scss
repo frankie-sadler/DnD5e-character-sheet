@@ -1,0 +1,62 @@
+$radius: 10px;
+$faded: #ddd;
+$faded-light: #eee;
+
+header {
+  display: flex;
+  align-content: stretch;
+  align-items: stretch;
+
+  section.characterName {
+    border: 1px solid black;
+    border-right: 0;
+    border-radius: $radius 0 0 $radius;
+    padding: 5px 0;
+    background-color: $faded-light;
+    width: 30%;
+    display: flex;
+    flex-direction: column-reverse;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+
+    input {
+      padding: 0.5em;
+      margin: 5px;
+      border: 0;
+    }
+
+    label {
+      padding-left: 1em;
+    }
+  }
+
+  section.misc {
+    width: 70%;
+    border: 1px solid black;
+    border-radius: $radius;
+    padding-left: 1em;
+    padding-right: 1em;
+
+    ul {
+      padding: 10px 0px 5px 0px;
+      display: flex;
+      flex-wrap: wrap;
+
+      li {
+        width: 33.33333%;
+        display: flex;
+        flex-direction: column-reverse;
+
+        label {
+          margin-bottom: 5px;
+        }
+
+        input {
+          border: 0;
+          border-bottom: 1px solid $faded;
+        }
+      }
+    }
+  }
+}
