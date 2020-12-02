@@ -1,5 +1,7 @@
 import SkillScoreBox from "./SkillScoreBox";
 
+import "../../../styles/skills.scss";
+
 const SkillScores = (props) => {
   return (
     <div className="skills list-section box">

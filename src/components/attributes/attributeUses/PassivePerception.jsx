@@ -1,3 +1,5 @@
+import "../../../styles/passivePerception.scss";
+
 const PassivePerception = (props) => {
   return (
     <div className="passive-perception box">

@@ -1,5 +1,7 @@
 import SavingThrowBox from "./SavingThrowBox";
 
+import "../../../styles/savingThrows.scss";
+
 const SavingThrows = (props) => {
   return (
     <div className="saves list-section box">
