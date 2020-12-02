@@ -1,9 +1,10 @@
 import Sheet from "./Sheet";
 
+import "../styles/App.sass";
+
 function App() {
   return (
     <div className="App">
-      {/* <header className="App-header">PLACEHOLDER</header> */}
       <Sheet />
     </div>
   );

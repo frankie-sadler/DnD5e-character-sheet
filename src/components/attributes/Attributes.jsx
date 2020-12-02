@@ -5,6 +5,9 @@ import OtherProficiencies from "./attributeUses/OtherProficiencies";
 import PassivePerception from "./attributeUses/PassivePerception";
 import Inspiration from "./attributeUses/Inspiration";
 
+import "../../styles/attributes.scss";
+import "../../styles/attributeUses.scss";
+
 const Attributes = (props) => {
   return (
     <section>
