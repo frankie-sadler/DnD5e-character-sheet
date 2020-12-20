@@ -1,0 +1,821 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "title": "The root schema",
+  "description": "The root schema comprises the entire JSON document.",
+  "default": {},
+  "examples": [
+    {
+      "name": "Thoradin Fireforge",
+      "class": "Paladin",
+      "level": 2,
+      "playerName": "Player McPlayerface",
+      "race": "Half-Elf",
+      "alignment": "Lawful Good",
+      "ExperiencePoints": 3240,
+      "proficiency": 2,
+      "attributes": {
+        "strength": 10,
+        "dexterity": 10,
+        "consitution": 10,
+        "wisdom": 10,
+        "intelligence": 10,
+        "charsima": 10
+      },
+      "savingThrows": {
+        "strength": 10,
+        "dexterity": 10,
+        "consitution": 10,
+        "wisdom": 10,
+        "intelligence": 10,
+        "charsima": 10
+      },
+      "skills": {
+        "Acrobatics": 10,
+        "Animal Handling": 10,
+        "Arcana": 10,
+        "Athletics": 10,
+        "Deception": 10,
+        "History": 10,
+        "Insight": 10,
+        "Intimidation": 10,
+        "Investigation": 10,
+        "Medicine": 10,
+        "Nature": 10,
+        "Perception": 10,
+        "Performance": 10,
+        "Persuasion": 10,
+        "Religion": 10,
+        "Sleight of Hand": 10,
+        "Stealth": 10,
+        "Survival": 10
+      },
+      "inspiration": false,
+      "armourClass": 10,
+      "initiative": 0,
+      "speed": 30,
+      "hitPoints": {
+        "maximum": 15,
+        "current": 15,
+        "temporary": 0,
+        "hitDice": "2d8",
+        "death": {
+          "saves": 0,
+          "fails": 0
+        }
+      },
+      "attacks": ["attackId"],
+      "equipment": {
+        "currency": {
+          "copper": 0,
+          "silver": 0,
+          "electrum": 0,
+          "gold": 0,
+          "platinum": 0
+        },
+        "equipment": ["equipId"]
+      },
+      "flavour": {
+        "personality": "",
+        "ideals": "",
+        "bonds": "",
+        "flaws": ""
+      }
+    }
+  ],
+  "required": [
+    "name",
+    "class",
+    "level",
+    "playerName",
+    "race",
+    "alignment",
+    "ExperiencePoints",
+    "proficiency",
+    "attributes",
+    "savingThrows",
+    "skills",
+    "inspiration",
+    "armourClass",
+    "initiative",
+    "speed",
+    "hitPoints",
+    "attacks",
+    "equipment",
+    "flavour"
+  ],
+  "properties": {
+    "name": {
+      "$id": "#/properties/name",
+      "type": "string",
+      "title": "The name schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": ["Thoradin Fireforge"]
+    },
+    "class": {
+      "$id": "#/properties/class",
+      "type": "string",
+      "title": "The class schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": ["Paladin"]
+    },
+    "level": {
+      "$id": "#/properties/level",
+      "type": "integer",
+      "title": "The level schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": 0,
+      "examples": [2]
+    },
+    "playerName": {
+      "$id": "#/properties/playerName",
+      "type": "string",
+      "title": "The playerName schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": ["Player McPlayerface"]
+    },
+    "race": {
+      "$id": "#/properties/race",
+      "type": "string",
+      "title": "The race schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": ["Half-Elf"]
+    },
+    "alignment": {
+      "$id": "#/properties/alignment",
+      "type": "string",
+      "title": "The alignment schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": ["Lawful Good"]
+    },
+    "ExperiencePoints": {
+      "$id": "#/properties/ExperiencePoints",
+      "type": "integer",
+      "title": "The ExperiencePoints schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": 0,
+      "examples": [3240]
+    },
+    "proficiency": {
+      "$id": "#/properties/proficiency",
+      "type": "integer",
+      "title": "The proficiency schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": 0,
+      "examples": [2]
+    },
+    "attributes": {
+      "$id": "#/properties/attributes",
+      "type": "object",
+      "title": "The attributes schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "examples": [
+        {
+          "strength": 10,
+          "dexterity": 10,
+          "consitution": 10,
+          "wisdom": 10,
+          "intelligence": 10,
+          "charsima": 10
+        }
+      ],
+      "required": [
+        "strength",
+        "dexterity",
+        "consitution",
+        "wisdom",
+        "intelligence",
+        "charsima"
+      ],
+      "properties": {
+        "strength": {
+          "$id": "#/properties/attributes/properties/strength",
+          "type": "integer",
+          "title": "The strength schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [10]
+        },
+        "dexterity": {
+          "$id": "#/properties/attributes/properties/dexterity",
+          "type": "integer",
+          "title": "The dexterity schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [10]
+        },
+        "consitution": {
+          "$id": "#/properties/attributes/properties/consitution",
+          "type": "integer",
+          "title": "The consitution schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [10]
+        },
+        "wisdom": {
+          "$id": "#/properties/attributes/properties/wisdom",
+          "type": "integer",
+          "title": "The wisdom schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [10]
+        },
+        "intelligence": {
+          "$id": "#/properties/attributes/properties/intelligence",
+          "type": "integer",
+          "title": "The intelligence schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [10]
+        },
+        "charsima": {
+          "$id": "#/properties/attributes/properties/charsima",
+          "type": "integer",
+          "title": "The charsima schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [10]
+        }
+      },
+      "additionalProperties": true
+    },
+    "savingThrows": {
+      "$id": "#/properties/savingThrows",
+      "type": "object",
+      "title": "The savingThrows schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "examples": [
+        {
+          "strength": 10,
+          "dexterity": 10,
+          "consitution": 10,
+          "wisdom": 10,
+          "intelligence": 10,
+          "charsima": 10
+        }
+      ],
+      "required": [
+        "strength",
+        "dexterity",
+        "consitution",
+        "wisdom",
+        "intelligence",
+        "charsima"
+      ],
+      "properties": {
+        "strength": {
+          "$id": "#/properties/savingThrows/properties/strength",
+          "type": "integer",
+          "title": "The strength schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [10]
+        },
+        "dexterity": {
+          "$id": "#/properties/savingThrows/properties/dexterity",
+          "type": "integer",
+          "title": "The dexterity schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [10]
+        },
+        "consitution": {
+          "$id": "#/properties/savingThrows/properties/consitution",
+          "type": "integer",
+          "title": "The consitution schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [10]
+        },
+        "wisdom": {
+          "$id": "#/properties/savingThrows/properties/wisdom",
+          "type": "integer",
+          "title": "The wisdom schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [10]
+        },
+        "intelligence": {
+          "$id": "#/properties/savingThrows/properties/intelligence",
+          "type": "integer",
+          "title": "The intelligence schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [10]
+        },
+        "charsima": {
+          "$id": "#/properties/savingThrows/properties/charsima",
+          "type": "integer",
+          "title": "The charsima schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [10]
+        }
+      },
+      "additionalProperties": true
+    },
+    "skills": {
+      "$id": "#/properties/skills",
+      "type": "object",
+      "title": "The skills schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "examples": [
+        {
+          "Acrobatics": 10,
+          "Animal Handling": 10,
+          "Arcana": 10,
+          "Athletics": 10,
+          "Deception": 10,
+          "History": 10,
+          "Insight": 10,
+          "Intimidation": 10,
+          "Investigation": 10,
+          "Medicine": 10,
+          "Nature": 10,
+          "Perception": 10,
+          "Performance": 10,
+          "Persuasion": 10,
+          "Religion": 10,
+          "Sleight of Hand": 10,
+          "Stealth": 10,
+          "Survival": 10
+        }
+      ],
+      "required": [
+        "Acrobatics",
+        "Animal Handling",
+        "Arcana",
+        "Athletics",
+        "Deception",
+        "History",
+        "Insight",
+        "Intimidation",
+        "Investigation",
+        "Medicine",
+        "Nature",
+        "Perception",
+        "Performance",
+        "Persuasion",
+        "Religion",
+        "Sleight of Hand",
+        "Stealth",
+        "Survival"
+      ],
+      "properties": {
+        "Acrobatics": {
+          "$id": "#/properties/skills/properties/Acrobatics",
+          "type": "integer",
+          "title": "The Acrobatics schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [10]
+        },
+        "Animal Handling": {
+          "$id": "#/properties/skills/properties/Animal%20Handling",
+          "type": "integer",
+          "title": "The Animal Handling schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [10]
+        },
+        "Arcana": {
+          "$id": "#/properties/skills/properties/Arcana",
+          "type": "integer",
+          "title": "The Arcana schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [10]
+        },
+        "Athletics": {
+          "$id": "#/properties/skills/properties/Athletics",
+          "type": "integer",
+          "title": "The Athletics schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [10]
+        },
+        "Deception": {
+          "$id": "#/properties/skills/properties/Deception",
+          "type": "integer",
+          "title": "The Deception schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [10]
+        },
+        "History": {
+          "$id": "#/properties/skills/properties/History",
+          "type": "integer",
+          "title": "The History schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [10]
+        },
+        "Insight": {
+          "$id": "#/properties/skills/properties/Insight",
+          "type": "integer",
+          "title": "The Insight schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [10]
+        },
+        "Intimidation": {
+          "$id": "#/properties/skills/properties/Intimidation",
+          "type": "integer",
+          "title": "The Intimidation schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [10]
+        },
+        "Investigation": {
+          "$id": "#/properties/skills/properties/Investigation",
+          "type": "integer",
+          "title": "The Investigation schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [10]
+        },
+        "Medicine": {
+          "$id": "#/properties/skills/properties/Medicine",
+          "type": "integer",
+          "title": "The Medicine schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [10]
+        },
+        "Nature": {
+          "$id": "#/properties/skills/properties/Nature",
+          "type": "integer",
+          "title": "The Nature schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [10]
+        },
+        "Perception": {
+          "$id": "#/properties/skills/properties/Perception",
+          "type": "integer",
+          "title": "The Perception schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [10]
+        },
+        "Performance": {
+          "$id": "#/properties/skills/properties/Performance",
+          "type": "integer",
+          "title": "The Performance schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [10]
+        },
+        "Persuasion": {
+          "$id": "#/properties/skills/properties/Persuasion",
+          "type": "integer",
+          "title": "The Persuasion schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [10]
+        },
+        "Religion": {
+          "$id": "#/properties/skills/properties/Religion",
+          "type": "integer",
+          "title": "The Religion schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [10]
+        },
+        "Sleight of Hand": {
+          "$id": "#/properties/skills/properties/Sleight%20of%20Hand",
+          "type": "integer",
+          "title": "The Sleight of Hand schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [10]
+        },
+        "Stealth": {
+          "$id": "#/properties/skills/properties/Stealth",
+          "type": "integer",
+          "title": "The Stealth schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [10]
+        },
+        "Survival": {
+          "$id": "#/properties/skills/properties/Survival",
+          "type": "integer",
+          "title": "The Survival schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [10]
+        }
+      },
+      "additionalProperties": true
+    },
+    "inspiration": {
+      "$id": "#/properties/inspiration",
+      "type": "boolean",
+      "title": "The inspiration schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": false,
+      "examples": [false]
+    },
+    "armourClass": {
+      "$id": "#/properties/armourClass",
+      "type": "integer",
+      "title": "The armourClass schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": 0,
+      "examples": [10]
+    },
+    "initiative": {
+      "$id": "#/properties/initiative",
+      "type": "integer",
+      "title": "The initiative schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": 0,
+      "examples": [0]
+    },
+    "speed": {
+      "$id": "#/properties/speed",
+      "type": "integer",
+      "title": "The speed schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": 0,
+      "examples": [30]
+    },
+    "hitPoints": {
+      "$id": "#/properties/hitPoints",
+      "type": "object",
+      "title": "The hitPoints schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "examples": [
+        {
+          "maximum": 15,
+          "current": 15,
+          "temporary": 0,
+          "hitDice": "2d8",
+          "death": {
+            "saves": 0,
+            "fails": 0
+          }
+        }
+      ],
+      "required": ["maximum", "current", "temporary", "hitDice", "death"],
+      "properties": {
+        "maximum": {
+          "$id": "#/properties/hitPoints/properties/maximum",
+          "type": "integer",
+          "title": "The maximum schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [15]
+        },
+        "current": {
+          "$id": "#/properties/hitPoints/properties/current",
+          "type": "integer",
+          "title": "The current schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [15]
+        },
+        "temporary": {
+          "$id": "#/properties/hitPoints/properties/temporary",
+          "type": "integer",
+          "title": "The temporary schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [0]
+        },
+        "hitDice": {
+          "$id": "#/properties/hitPoints/properties/hitDice",
+          "type": "string",
+          "title": "The hitDice schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": ["2d8"]
+        },
+        "death": {
+          "$id": "#/properties/hitPoints/properties/death",
+          "type": "object",
+          "title": "The death schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": {},
+          "examples": [
+            {
+              "saves": 0,
+              "fails": 0
+            }
+          ],
+          "required": ["saves", "fails"],
+          "properties": {
+            "saves": {
+              "$id": "#/properties/hitPoints/properties/death/properties/saves",
+              "type": "integer",
+              "title": "The saves schema",
+              "description": "An explanation about the purpose of this instance.",
+              "default": 0,
+              "examples": [0]
+            },
+            "fails": {
+              "$id": "#/properties/hitPoints/properties/death/properties/fails",
+              "type": "integer",
+              "title": "The fails schema",
+              "description": "An explanation about the purpose of this instance.",
+              "default": 0,
+              "examples": [0]
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "attacks": {
+      "$id": "#/properties/attacks",
+      "type": "array",
+      "title": "The attacks schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": [],
+      "examples": [["attackId"]],
+      "additionalItems": true,
+      "items": {
+        "$id": "#/properties/attacks/items",
+        "anyOf": [
+          {
+            "$id": "#/properties/attacks/items/anyOf/0",
+            "type": "string",
+            "title": "The first anyOf schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": ["attackId"]
+          }
+        ]
+      }
+    },
+    "equipment": {
+      "$id": "#/properties/equipment",
+      "type": "object",
+      "title": "The equipment schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "examples": [
+        {
+          "currency": {
+            "copper": 0,
+            "silver": 0,
+            "electrum": 0,
+            "gold": 0,
+            "platinum": 0
+          },
+          "equipment": ["equipId"]
+        }
+      ],
+      "required": ["currency", "equipment"],
+      "properties": {
+        "currency": {
+          "$id": "#/properties/equipment/properties/currency",
+          "type": "object",
+          "title": "The currency schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": {},
+          "examples": [
+            {
+              "copper": 0,
+              "silver": 0,
+              "electrum": 0,
+              "gold": 0,
+              "platinum": 0
+            }
+          ],
+          "required": ["copper", "silver", "electrum", "gold", "platinum"],
+          "properties": {
+            "copper": {
+              "$id": "#/properties/equipment/properties/currency/properties/copper",
+              "type": "integer",
+              "title": "The copper schema",
+              "description": "An explanation about the purpose of this instance.",
+              "default": 0,
+              "examples": [0]
+            },
+            "silver": {
+              "$id": "#/properties/equipment/properties/currency/properties/silver",
+              "type": "integer",
+              "title": "The silver schema",
+              "description": "An explanation about the purpose of this instance.",
+              "default": 0,
+              "examples": [0]
+            },
+            "electrum": {
+              "$id": "#/properties/equipment/properties/currency/properties/electrum",
+              "type": "integer",
+              "title": "The electrum schema",
+              "description": "An explanation about the purpose of this instance.",
+              "default": 0,
+              "examples": [0]
+            },
+            "gold": {
+              "$id": "#/properties/equipment/properties/currency/properties/gold",
+              "type": "integer",
+              "title": "The gold schema",
+              "description": "An explanation about the purpose of this instance.",
+              "default": 0,
+              "examples": [0]
+            },
+            "platinum": {
+              "$id": "#/properties/equipment/properties/currency/properties/platinum",
+              "type": "integer",
+              "title": "The platinum schema",
+              "description": "An explanation about the purpose of this instance.",
+              "default": 0,
+              "examples": [0]
+            }
+          },
+          "additionalProperties": true
+        },
+        "equipment": {
+          "$id": "#/properties/equipment/properties/equipment",
+          "type": "array",
+          "title": "The equipment schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": [],
+          "examples": [["equipId"]],
+          "additionalItems": true,
+          "items": {
+            "$id": "#/properties/equipment/properties/equipment/items",
+            "anyOf": [
+              {
+                "$id": "#/properties/equipment/properties/equipment/items/anyOf/0",
+                "type": "string",
+                "title": "The first anyOf schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": ["equipId"]
+              }
+            ]
+          }
+        }
+      },
+      "additionalProperties": true
+    },
+    "flavour": {
+      "$id": "#/properties/flavour",
+      "type": "object",
+      "title": "The flavour schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "examples": [
+        {
+          "personality": "",
+          "ideals": "",
+          "bonds": "",
+          "flaws": ""
+        }
+      ],
+      "required": ["personality", "ideals", "bonds", "flaws"],
+      "properties": {
+        "personality": {
+          "$id": "#/properties/flavour/properties/personality",
+          "type": "string",
+          "title": "The personality schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [""]
+        },
+        "ideals": {
+          "$id": "#/properties/flavour/properties/ideals",
+          "type": "string",
+          "title": "The ideals schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [""]
+        },
+        "bonds": {
+          "$id": "#/properties/flavour/properties/bonds",
+          "type": "string",
+          "title": "The bonds schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [""]
+        },
+        "flaws": {
+          "$id": "#/properties/flavour/properties/flaws",
+          "type": "string",
+          "title": "The flaws schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [""]
+        }
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true
+}
