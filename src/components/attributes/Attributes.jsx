@@ -3,7 +3,7 @@ import SavingThrows from "./attributeUses/SavingThrows";
 import SkillScores from "./attributeUses/SkillScores";
 import OtherProficiencies from "./attributeUses/OtherProficiencies";
 import PassivePerception from "./attributeUses/PassivePerception";
-import ProfieciencyBonus from "./attributeUses/ProfieciencyBonus";
+import ProficiencyBonus from "./attributeUses/ProficiencyBonus";
 import Inspiration from "./attributeUses/Inspiration";
 
 import "../../styles/attributes.scss";
@@ -16,7 +16,7 @@ const Attributes = (props) => {
         <AttributeScores />
         <div className="attr-applications">
           <Inspiration />
-          <ProfieciencyBonus />
+          <ProficiencyBonus />
           <SavingThrows />
           <SkillScores />
         </div>
